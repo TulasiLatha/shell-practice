@@ -34,7 +34,7 @@ do
     dnf list installed $package  &>>$LOG_FILE
 
     #if exit status i s0, already. -ne 0 need to install it
-    if[ $? -ne 0 ]; then
+    if [ $? -ne 0 ]; then
         dnf install $package -y &>>$LOG_FILE
         VALIDATE $? "$package"
     else
