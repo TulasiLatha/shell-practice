@@ -24,25 +24,25 @@ VALIDATE(){
 
 dnf list installed mysql
 if[ $? -ne 0]; then
-     dnf install mysql -y
-     VALIDATE $? "MYSQL"
+    dnf install mysql -y
+    VALIDATE $? "MYSQL"
 else
-     echo "MYSQL already exists ... $Y SKIPPIMG $N"
+    echo "MYSQL already exists ... $Y SKIPPIMG $N"
 fi
 
 dnf list installed nginx
 if[ $? -ne 0 ]; then
-     dnf install nginx -y
-     VALIDATE $? "NGINX"
+    dnf install nginx -y
+    VALIDATE $? "NGINX"
 else 
-     echo "NGINX already exist ... $Y Skipping  $N"
+    echo "NGINX already exist ... $Y Skipping  $N"
 fi
 dnf list installed python3
 if [ $? -ne 0 ]; then
-     dnf install python3 -y
-     VALIDATE $? "MONGODB"
+    dnf install python3 -y
+    VALIDATE $? "MONGODB"
 else 
-     echo -e "NGINX already exists .... $Y Skipping $N"
+    echo -e "NGINX already exists .... $Y Skipping $N"
 fi
 
 
