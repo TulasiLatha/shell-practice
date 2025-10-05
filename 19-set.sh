@@ -1,6 +1,7 @@
 #!/bin/bash
+set -e
 
 echo "hello"
 echo "before error.."
-ccca:
+ccca:hgg
 echo "after erro"
