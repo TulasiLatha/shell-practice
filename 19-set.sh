@@ -3,4 +3,4 @@
 echo "hello"
 echo "before error.."
 ccca:
-echo "after errot
+echo "after erro"
